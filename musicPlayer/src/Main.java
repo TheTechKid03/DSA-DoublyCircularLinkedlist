@@ -137,7 +137,7 @@ class Main {
     static void play(Node begin)
     {
         Node temp = begin;
-        System.out.println("Enter: 1. to play next song 2.to play previous song");
+     
 
 
         System.out.print(
@@ -159,6 +159,15 @@ class Main {
         }
         System.out.printf("playing" + temp.data);
         }
+    static void repeat(Node begin){
+        Node temp = begin;
+        boolean running = true;
+        System.out.print(
+                "\n!Playing playlist! \n");
+        for(int i = 0; i < 100; i++)
+            System.out.println("playing " + temp.data);
+            temp = temp.next;
+    }
 
     public static void main(String[] args)
     {
