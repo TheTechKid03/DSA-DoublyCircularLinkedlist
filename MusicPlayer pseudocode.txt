@@ -2,7 +2,7 @@ Class Node
 	data
 	next
 	previous
- 	
+ End Class
 addSong(begin, song)
 	if (begin == empty) then
 		create node as new_node
@@ -26,9 +26,9 @@ removeSong(begin, song)
 
 	current = begin
 	previous_node = none
-	while do (cuurent.data != song)
+	while do cuurent.data != song
 		if current.next = begin then
-			print("there is no song with the name" + song)
+			print "there is no song with the name" + song
 			return begin
 		end if
 		previous_node = current
@@ -48,7 +48,7 @@ removeSong(begin, song)
 	
 	else if current.next == begin then
 		previous_node.next = begin
-		begin.previos = previous_node
+		begin.previous = previous_node
 	else
 		create node as temp
 		temp = current.next
@@ -60,20 +60,33 @@ End Function
 play(begin)
 	
 	temp = begin
-	get key
 	
 	while temp.next != begin do
-		print "playing " + temp
+		print "playing " + temp.data
 		temp = temp.next
-		if key == "next" then
-			temp = temp.next
-		else if key == "previous" then
-			temp = temp.prev
+	print temp.data
+	last = temp.previous
+	while temp.previous != last
+		print "playing" + temp.data
+		temp = temp.prev	
 	end While
+	print temp.data
 End Function
 
+repeat(begin)
+	temp =  begin
+	running = true
+	print "enter stop to stop the repeat
+	while running do
+		print "playing" + temp.data
+		temp = temp.next
+		if key == "stop" then
+			running = false
+		end if
+	end while do
+End Function
+	
 search(begin, song)
-	create node 
 	temp = begin
 	found = 0
 	count = 0
