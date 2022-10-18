@@ -122,8 +122,7 @@ class Main {
                 found = 1;
             }
 
-            // If found is true, then element
-            // found, else not
+            
             if(found == 1)
                 System.out.println("\n"+song +" found at position "+
                         count);
@@ -149,6 +148,16 @@ class Main {
 
         }
         System.out.printf("playing " + temp.data);
+        
+        System.out.printf(
+            "Playing playlist in reverse direction \n");
+        Node last = start.prev;
+        temp = last;
+        while (temp.prev != last) {
+            System.out.printf("playing" +  temp.data);
+            temp = temp.prev;
+        }
+        System.out.printf("playing" + temp.data);
         }
 
     public static void main(String[] args)
