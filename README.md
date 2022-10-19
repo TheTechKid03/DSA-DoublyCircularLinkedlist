@@ -13,8 +13,13 @@ A Music Player using Circular Doubly Linked List to transverse through the playl
 - Peter Strauss 222107200
 
 
-### General
-The Music player 
+### Description of music player
+The Music player allows the user to add song to a playlists, removing songs from the playlist, searching for a song in the playlist, playing the music, repeating the playlist.
+
+##### Adding music to the playlist
+To add music to the playlist enter 1. then enter the name of the song thats needs to be added.
+##### Removing 
+To 
 
 ### Modules
 
