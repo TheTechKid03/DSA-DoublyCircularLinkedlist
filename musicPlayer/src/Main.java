@@ -162,7 +162,7 @@ class Main {
     static void repeat(Node begin, int count){
         Node temp = begin;
         //boolean running = true;
-        System.out.print(
+        System.out.println(
                 "\n!Playing playlist! \n");
         for(int i = 0; i < count; i++){
             System.out.println("playing " + temp.data);
@@ -210,9 +210,10 @@ class Main {
                 repeat(begin, count);
             }
             else if (choice == 6) {
+                System.out.println("You have quited");
                 running = false;
             }
-            System.out.println("You have quited")
+
         }
     }
 }
