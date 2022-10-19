@@ -32,7 +32,7 @@ To repeat the playlist enter 5. then enter the amount of times it must repeat it
 ![music player modules](https://user-images.githubusercontent.com/113937044/196698459-23e76ed7-4c92-4e8a-9b6b-21f812d7c637.png)
 
 ### Flowchart
-![Flowchart](https://user-images.githubusercontent.com/113937044/196802046-b5addd12-98b4-467e-94e5-084110bbdb23.jpg)
+![DSA Flowchart](https://user-images.githubusercontent.com/113937044/196803191-0985af90-e241-4217-9963-1f90538d0c38.jpg)
 
 
 ### Music Player Pseudocode
