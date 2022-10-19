@@ -4,8 +4,13 @@ A Music Player using Circular Doubly Linked List to transverse through the playl
 ## Group Members
 - Barkias Shapaka 222053526
 - Romario Rhoman 221080457
-- Rejoice Kwizi 222076534
+- Rejoice Kwizi 222076534 (Team Leader)
 - Simeon Tuyoleni 222129298
+- Michael Amutenya 221068937
+- Elifas Shindinge 222055707
+- Brito Manuel 
+- Abraham Mabuta 
+- Peter Strauss 222107200
 
 
 ### General
