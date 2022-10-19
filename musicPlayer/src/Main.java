@@ -147,26 +147,26 @@ class Main {
             temp = temp.next;
 
         }
-        System.out.printf("playing " + temp.data);
+        System.out.print("playing " + temp.data);
         
-        System.out.printf(
+        System.out.print(
             "Playing playlist in reverse direction \n");
-        Node last = start.prev;
+        Node last = begin.previous;
         temp = last;
-        while (temp.prev != last) {
+        while (temp.previous != last) {
             System.out.printf("playing" +  temp.data);
-            temp = temp.prev;
+            temp = temp.previous;
         }
         System.out.printf("playing" + temp.data);
         }
-    static void repeat(Node begin){
+    static void repeat(Node begin, int count){
         Node temp = begin;
-        boolean running = true;
+        //boolean running = true;
         System.out.print(
                 "\n!Playing playlist! \n");
-        for(int i = 0; i < 100; i++)
+        for(int i = 0; i < count; i++){
             System.out.println("playing " + temp.data);
-            temp = temp.next;
+            temp = temp.next;}
     }
 
     public static void main(String[] args)
@@ -180,7 +180,7 @@ class Main {
 
         boolean running = true;
         while(running){
-            System.out.println("Enter Choice \n1. Add Song to playlist \n2. Remove Song from playlist \n3. Search Song in playlist \n4. play playlist \n5. Quit");
+            System.out.println("Enter Choice \n1. Add Song to playlist \n2. Remove Song from playlist \n3. Search Song in playlist \n4. play playlist \n5. repeat playlist \n6. Quit");
 
             choice = input.nextInt();
             if (choice == 1){
@@ -201,7 +201,12 @@ class Main {
             else if (choice == 4){
                 play(begin);
             }
-            else if (choice == 5) {
+            else if (choice == 5){
+                System.out.println("Enter the amount of times that the playlist must repeat itself");
+                int count = input.nextInt();
+                repeat(begin, count);
+            }
+            else if (choice == 6) {
                 running = false;
             }
         }
