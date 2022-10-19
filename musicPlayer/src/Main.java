@@ -154,10 +154,10 @@ class Main {
         Node last = begin.previous;
         temp = last;
         while (temp.previous != last) {
-            System.out.printf("playing" +  temp.data);
+            System.out.print("playing" +  temp.data);
             temp = temp.previous;
         }
-        System.out.printf("playing" + temp.data);
+        System.out.print("playing" + temp.data);
         }
     static void repeat(Node begin, int count){
         Node temp = begin;
@@ -177,6 +177,7 @@ class Main {
 
         int choice ;
         String song_name;
+        int num_of_song = 0;
 
         boolean running = true;
         while(running){
@@ -186,6 +187,7 @@ class Main {
             if (choice == 1){
                 System.out.println("Enter song name to be added to playlist: ");
                 song_name = input.next();
+                num_of_song += 1;
                 begin = addSong(song_name);
             }
             else if (choice == 2){
@@ -204,11 +206,13 @@ class Main {
             else if (choice == 5){
                 System.out.println("Enter the amount of times that the playlist must repeat itself");
                 int count = input.nextInt();
+                count = num_of_song * count;
                 repeat(begin, count);
             }
             else if (choice == 6) {
                 running = false;
             }
+            System.out.println("You have quited")
         }
     }
 }
